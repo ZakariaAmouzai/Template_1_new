@@ -1,0 +1,66 @@
+/* service section*/
+.service{
+    background: #eeeeee;
+}
+.service-item{
+    width: 50%;
+    float: left;
+}
+.service-item .section-header{
+    text-align: left;
+}
+.service-item .section-header h2{
+    font-size: 30px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+.service-item .section-header .line{
+    margin: 0 0 40px 0;
+}
+.service-item-desc{
+    padding-right: 20px;
+    color: #999;
+    line-height: 1.5;
+    word-spacing: 2px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.service-list{
+    list-style: none;
+}
+.service-list li{
+    margin-bottom: 20px;
+    color: #999;
+}
+.service-list li i{
+    border: 1px solid #6195ff;
+    color: #6195ff;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.service-item-img img{
+    width: 100%;
+}
+.service-item .service-bollets{
+    text-align: center;
+    list-style: none;
+}
+.service-bollets li{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background-color: rgb(167, 166, 166);
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 10px 20px;
+}
+.service-bollets li.active{
+    background-color: #6195ff;
+}
+.service-bollets li:hover{
+    background-color: #6195ff;
+}

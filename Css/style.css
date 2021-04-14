@@ -1,0 +1,91 @@
+/*
+    1-Common Styles
+    2- General styles
+    3- Sections
+        3.1- Home Section
+        3.2- ....*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blueColor: #6195ff;
+}
+
+body{
+    font-family: 'Varela Round', sans-serif;
+}
+
+/*Common things*/
+.clear{
+    clear: both;
+}
+.container{
+    margin: auto;
+    width:  80%;
+}
+h1 ,h2 ,h3 ,h4 ,h5 ,h6{
+    font-family: montserrat, sans-serif;
+}
+button{
+    font-family: 'Varela Round', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+    /*The padding between the sections*/
+.pd-y{
+    padding: 120px 0;
+}
+    /*The line under the headers*/
+.section-header{
+    text-align: center;
+    margin: 10px;
+}
+.section-header .section-title{
+    font: 35px;
+    text-transform: capitalize;
+    margin-bottom: 5px;
+}
+.section-header .line{
+    width: 40px;
+    height: 5px;
+    background-color: var(--blueColor);
+    display: block;
+    margin: 0px auto 70px auto;
+
+}
+
+    /*Hover */
+.hover-opacity{
+    transition: .5s;
+}
+.hover-opacity:hover{
+    opacity: 0.8;
+}
+
+    /* The effect of the left to right background*/
+.ltr-effect{
+    position: relative;
+}
+.ltr-effect::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #333;
+    transition: width 1s;
+}
+.ltr-effect:hover::after{
+    width: 100%;
+}
